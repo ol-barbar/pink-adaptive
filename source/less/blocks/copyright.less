@@ -1,0 +1,65 @@
+.copyright {
+    @media (max-width:@mobil-size) {
+        display: none;
+    }
+    @media (min-width:@desktop-size) {
+        background-color: @light-grey;
+    }
+}
+
+.copyright-block{
+    background-image: url("../img/clock.svg");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 238px;
+    padding-left: 320px;
+    padding-top: 100px;
+    padding-bottom: 30px;
+    @media (min-width:@desktop-size) {
+        background-size: 298px;
+        padding-left: 370px;
+        padding-top: 110px;
+        padding-bottom: 120px;
+    }
+}
+
+.copyright__title {
+    .font-style(30px; 30px; bold);
+    color: @black;
+    margin: 0;
+    padding-bottom: 25px;
+    @media (min-width:@desktop-size) {
+        padding-bottom: 35px;
+        br {
+            display: none;
+        }
+    }
+}
+
+.copyright__text {
+    .font-style(14px; 24px; normal);
+    margin: 0;
+    padding-bottom: 25px;
+    @media (min-width:@desktop-size) {
+        .font-style(18px; 30px; normal);
+        padding-bottom: 45px;
+    }
+}
+
+.copyright__link {
+    .font-style(14px; 24px; normal);
+    color: @strong-pink;
+    text-decoration: underline;
+    margin: 0;
+    @media (min-width:@desktop-size) {
+        .font-style(18px; 30px; normal);
+    }
+    &:hover,
+    &:focus {
+        color: @blue;
+        text-decoration: underline;
+    }
+    &:active {
+        color: fade(@blue; 30%);
+    }
+}

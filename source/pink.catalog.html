@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Приложение Pink</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page__body">
+  <header class="page-header">
+    <div class="header-menu-wrapper header-menu-wrapper--no-js">
+      <div class="header-menu wrapper">
+        <a class="page-header__logo" href="pink.index.html">
+          <span class="visually-hidden">Главная</span>
+          <!-- Здесь должны быть разные лого для разных экранов -->
+          <img class="page-header__logo-img header-logo-glasses" src="img/glasses-header.svg" alt="Pink">
+          <img class="page-header__logo-img header-logo-pink" src="img/pink-header.svg" alt="Pink">
+        </a>
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list">
+              <li class="main-nav__item main-nav__item--current">
+                <a class="main-nav__item-link" href="pink.index.html">Главная</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__item-link main-nav__item-link--current" href="pink.catalog.html">Фотографии</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__item-link" href="pink.form.html">Конкурс</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__item-link" href="#">HTML Academy</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <div class="intro-inner">
+      <div class="catalog-header wrapper intro-inner-wrapper">
+        <div class="top-inner-page">
+          <h2 class="head-title top-inner-page__title">Фотографии пользователей</h2>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="main-content">
+    <h1 class="visually-hidden">Приложение Pink - добавьте красок!</h1>
+    <div class="wrapper preface">
+      <div class="preface-wrapper">
+        <p class="catalog-desc text preface__content">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
+        </p>
+      </div>
+    </div>
+    <div class="catalog-galery">
+      <h2 class="visually-hidden">Галерея фотографий пользователей</h2>
+      <div class="catalog-galery-panorama">
+        <img class="catalog-card__img-panorama" src="img/catalog/panorama-desktop.png" alt="">
+        <div class="wrapper catalog-card catalog-card--panorama">
+          <div class="catalog-card__info">
+            <p class="catalog-card__user-name">Анна <time class="catalog-card__time">(5 минут назад)</time></p>
+            <p class="catalog-card__desc">Прыгать или нет? Напишите в комментарии свой совет и
+                  смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+            <p class="catalog-card__like">Нравится: <span class="catalog-card__like--number">215</span></p>
+          </div>
+        </div>
+      </div>
+      <div class="catalog-galery-basic wrapper">
+        <div class="catalog-galery-wrapper">
+          <div class="catalog-card">
+            <img class="catalog-card__img" src="img/catalog/photo-1-desktop.png" alt="">
+            <div class="catalog-card__info">
+              <p class="catalog-card__user-name">Левон <time class="catalog-card__time">(5 часов назад)</time></p>
+              <p class="catalog-card__desc">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+              <p class="catalog-card__like">Нравится: <span class="catalog-card__like--number">356</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="catalog-galery-wrapper">
+          <div class="catalog-card">
+            <img class="catalog-card__img" src="img/catalog/photo-2-desktop.png" alt="">
+            <div class="catalog-card__info">
+              <p class="catalog-card__user-name">Антон <time class="catalog-card__time">(12 часов назад)</time></p>
+              <p class="catalog-card__desc">Соседи будут рады!</p>
+              <p class="catalog-card__like">Нравится: <span class="catalog-card__like--number">666</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="catalog-galery-wrapper">
+          <div class="catalog-card">
+            <img class="catalog-card__img" src="img/catalog/photo-3-desktop.png" alt="">
+            <div class="catalog-card__info">
+              <p class="catalog-card__user-name">Борис <time class="catalog-card__time">(20 часов назад)</time></p>
+              <p class="catalog-card__desc">Здесь могла быть ваша цитата о высоком и вечном.</p>
+              <p class="catalog-card__like">Нравится: <span class="catalog-card__like--number">215</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="catalog-galery-wrapper">
+          <div class="catalog-card">
+            <img class="catalog-card__img" src="img/catalog/photo-4-desktop.png" alt="">
+            <div class="catalog-card__info">
+              <p class="catalog-card__user-name">Сергей <time class="catalog-card__time">(25 часов назад)</time></p>
+              <p class="catalog-card__desc">Самая кубанская в мире!</p>
+              <p class="catalog-card__like">Нравится: <span class="catalog-card__like--number">4</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="catalog-galery-wrapper">
+          <div class="catalog-card">
+            <img class="catalog-card__img" src="img/catalog/photo-5-desktop.png" alt="">
+            <div class="catalog-card__info">
+              <p class="catalog-card__user-name">Максим <time class="catalog-card__time">(40 часов назад)</time></p>
+              <p class="catalog-card__desc">Где снег-то?</p>
+              <p class="catalog-card__like">Нравится: <span class="catalog-card__like--number">150</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="catalog-galery-wrapper">
+          <div class="catalog-card">
+            <img class="catalog-card__img" src="img/catalog/photo-6-desktop.png" alt="">
+            <div class="catalog-card__info">
+              <p class="catalog-card__user-name">Надежда <time class="catalog-card__time">(45 часов назад)</time></p>
+              <p class="catalog-card__desc">Всем GM и взаимные лайки!</p>
+              <p class="catalog-card__like">Нравится: <span class="catalog-card__like--number">2560</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="photo-editor">
+      <h2 class="visually-hidden">Редактор фотографий</h2>
+      <div class="preface wrapper">
+        <div class="preface-wrapper">
+          <p class="photo-editor__desc text preface__content">Затмите их всех! <br>
+        Выкладывайте все, что накопилось в телефоне!</p>
+        </div>
+      </div>
+      <div class="photo-editor__box">
+        <div class="wrapper">
+        <form class="editor-form" action="https://echo.htmlacademy.ru" method="post" id="editor-form">
+          <div class="photo-editor__photo">
+            <img src="img/editor/photo-7-desktop.png" alt="Загруженное фото">
+          </div>
+          <div class="photo-editor__set">
+            <div class="photo-editor-toggle">
+              <fieldset class="photo-editor-toggle__tool photo-editor-toggle__tool--active photo-editor-toggle__crop" form="editor-form">
+                <button class="photo-editor-toggle__button">
+                  <svg class="photo-editor-toggle__icon" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M32 28H36V12C36 10.9391 35.5786 9.92172 34.8284 9.17157C34.0783 8.42143 33.0609 8 32 8H16V12H32V28ZM12 
+                    32V0H8V8H0V12H8V32C8 33.0609 8.42143 34.0783 9.17157 34.8284C9.92172 35.5786 10.9391 36 12 36H32V44H36V36H44V32H12Z" 
+                    fill="#283645"/>
+                    </svg>
+                </button>
+                <label class="visually-hidden" for="crop">Размер</label>
+                <input class="photo-editor-toggle__range" type="range" id="crop" name="crop">
+              </fieldset>
+              <fieldset class="photo-editor-toggle__tool photo-editor-toggle__fill" form="editor-form">
+                <button class="photo-editor-toggle__button">
+                  <svg class="photo-editor-toggle__icon" width="48" height="43" viewBox="0 0 48 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M33.12 17.88L15.24 0L12.41 2.83L17.17 7.59L6.88 17.88C6.3182 18.4425 6.00264 19.205 6.00264 20C6.00264 20.795 
+                    6.3182 21.5575 6.88 22.12L17.88 33.12C18.4425 33.6818 19.205 33.9974 20 33.9974C20.795 33.9974 21.5575 33.6818 22.12 
+                    33.12L33.12 22.12C33.6818 21.5575 33.9974 20.795 33.9974 20C33.9974 19.205 33.6818 18.4425 33.12 17.88ZM10.41 20L20 
+                    10.42L29.59 20H10.41ZM38 23C38 23 34 27.33 34 30C34 31.0609 34.4214 32.0783 35.1716 32.8284C35.9217 33.5786 36.9391 34 38 
+                    34C39.0609 34 40.0783 33.5786 40.8284 32.8284C41.5786 32.0783 42 31.0609 42 30C42 27.33 38 23 38 23Z" fill="#283645"/>
+                    <path d="M48 40H0V43H48V40Z" fill="#283645"/>
+                  </svg>
+                </button>
+                <label class="visually-hidden" for="fill">Заливка</label>
+                <input class="photo-editor-toggle__range" type="range" id="fill" name="fill">
+              </fieldset>
+              <fieldset class="photo-editor-toggle__tool photo-editor-toggle__contrast" form="editor-form">
+                <button class="photo-editor-toggle__button">
+                  <svg class="photo-editor-toggle__icon" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 4C18.3734 4 20.6935 4.70379 22.6669 6.02236C24.6402 7.34094 26.1783 9.21509 27.0866 11.4078C27.9948 13.6005 
+                    28.2325 16.0133 27.7694 18.3411C27.3064 20.6689 26.1635 22.8071 24.4853 24.4853C22.8071 26.1635 20.6689 27.3064 18.3411 
+                    27.7694C16.0133 28.2324 13.6005 27.9948 11.4078 27.0866C9.21509 26.1783 7.34095 24.6402 6.02237 22.6668C4.70379 20.6935 
+                    4.00001 18.3734 4.00001 16C4.00001 12.8174 5.26429 9.76515 7.51473 7.51472C9.76516 5.26428 12.8174 4 16 4ZM16 0C12.8355 0 
+                    9.74207 0.938384 7.11088 2.69649C4.4797 4.45459 2.42894 6.95345 1.21793 9.87706C0.0069325 12.8007 -0.309921 16.0177 0.307443 
+                    19.1214C0.924806 22.2251 2.44866 25.0761 4.6863 27.3137C6.92394 29.5513 9.77487 31.0752 12.8786 31.6926C15.9823 32.3099 
+                    19.1993 31.9931 22.1229 30.7821C25.0466 29.5711 27.5454 27.5203 29.3035 24.8891C31.0616 22.2579 32 19.1645 32 16C32 11.7565 
+                    30.3143 7.68687 27.3137 4.68629C24.3131 1.68571 20.2435 0 16 0Z" fill="#283645"/>
+                    <path d="M16 24.29C18.1536 24.1422 20.1708 23.1824 21.644 21.6046C23.1172 20.0268 23.9366 17.9486 23.9366 15.79C23.9366 
+                    13.6314 23.1172 11.5532 21.644 9.97538C20.1708 8.39759 18.1536 7.43782 16 7.29" fill="#283645"/>
+                  </svg>
+                </button>
+                <label class="visually-hidden" for="contrast">Контраст</label>
+                <input class="photo-editor-toggle__range" type="range" id="contrast" name="contrast">
+              </fieldset>
+            </div>
+            <fieldset class="photo-editor__buttons" form="editor-form">
+              <button class="photo-editor__button photo-editor__button--submit button" type="submit">Запостить</button>
+              <button class="photo-editor__button photo-editor__button--reset photo-editor__button--disable button" type="reset">Отмена</button>
+            </fieldset>
+          </div>
+        </form>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="page-footer">
+    <div class="wrapper footer-wrapper">
+      <div class="page-footer__container">
+        <a class="page-footer__logo" href="#">
+          <span class="visually-hidden">Главная</span>
+          <img class="page-footer__logo-img footer-logo-glasses" src="img/glasses-footer.svg" alt="Pink">
+          <img class="page-footer__logo-img footer-logo-pink" src="img/pink-footer.svg" alt="Pink">
+        </a>
+      </div>
+      <div class="page-footer__container footer-social">
+        <a class="footer-social__link footer-social__link-twitter" href="">
+          <img class="footer-social-img" src="img/twitter.svg" alt=""><span class="visually-hidden">Twitter</span>
+        </a>
+        <a class="footer-social__link footer-social__link-facebook" href="">
+          <img class="footer-social-img" src="img/facebook.svg" alt=""><span class="visually-hidden">FaceBook</span>
+        </a>
+        <a class="footer-social__link footer-social__link-youtube" href="">
+          <img class="footer-social-img" src="img/youtube.svg" alt=""><span class="visually-hidden">YouTube</span>
+        </a>
+      </div>
+      <div class="page-footer__container">
+        <a class="page-footer__creator creator-link" href="#">
+          <span class="creator-link__text">Разработано</span>
+          <img class="creator-link__img" src="img/html-academy.svg" alt="HTML Academy"><span class="visually-hidden">HTML Academy</span>
+        </a>
+      </div>
+    </div>
+  </footer>
+  <script src="../js/header-menu.js"></script>
+</body>
+</html>

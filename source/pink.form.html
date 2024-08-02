@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Приложение Pink</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page__body">
+  <header class="page-header">
+    <div class="header-menu-wrapper header-menu-wrapper--no-js">
+      <div class="header-menu wrapper">
+        <a class="page-header__logo" href="pink.index.html">
+          <span class="visually-hidden">Главная</span>
+          <!-- Здесь должны быть разные лого для разных экранов -->
+          <img class="page-header__logo-img header-logo-glasses" src="img/glasses-header.svg" alt="Pink">
+          <img class="page-header__logo-img header-logo-pink" src="img/pink-header.svg" alt="Pink">
+        </a>
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list">
+              <li class="main-nav__item main-nav__item--current">
+                <a class="main-nav__item-link" href="pink.index.html">Главная</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__item-link" href="pink.catalog.html">Фотографии</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__item-link main-nav__item-link--current" href="pink.form.html">Конкурс</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__item-link" href="#">HTML Academy</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <div class="intro-inner">
+      <div class="contest-header wrapper intro-inner-wrapper">
+        <div class="top-inner-page">
+          <h2 class="head-title top-inner-page__title">Конкурс на самое безбашенное путешествие с Пинк</h2>
+        </div>  
+      </div>
+    </div>
+  </header>
+  <main class="main-content">
+    <h1 class="visually-hidden">Форма для участия в конкурсе Pink</h1>
+    <div class="wrapper preface">
+      <div class="preface-wrapper">
+        <p class="contest-desc text preface__content">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+          <span class="preface__content--tablet">Пожалуйста, заполните форму ниже:</span>
+        </p>
+      </div>
+    </div>
+    <div class="wrapper">
+      <form class="contest-form" action="https://echo.htmlacademy.ru" method="post" id="contest-form">
+        <!-- <div class="contest-form__block contest-form__block--name"> -->
+        <fieldset class="contest-form__block contest-form-user-name form-area" form="contest-form">
+          <legend class="visually-hidden">ФИО:</legend>
+          <p class="contest-form-user-name__block">
+            <label class="form-area__name" for="last-name">Фамилия:</label>
+            <input class="form-area__box form-area__caption" type="text" id="last-name" name="last-name" placeholder="Укажите фамилию *" required>
+          </p>
+          <p class="contest-form-user-name__block">
+            <label class="form-area__name" for="first-name">Имя:</label>
+            <input class="form-area__box form-area__caption" type="text" id="first-name" name="first-name" placeholder="Введите ваше имя *" required>
+          </p>
+          <p class="contest-form-user-name__block">
+            <label class="form-area__name" for="surname-name">Отчество:</label>
+            <input class="form-area__box form-area__caption" type="text" id="surname-name" name="surname-name" placeholder="Ну и отчество тоже">
+          </p>
+        </fieldset>
+        <!-- </div>
+        <div class="contest-form__block contest-form__block--achive"> -->
+        <fieldset class="contest-form__block contest-form-achive form-area" form="contest-form">
+          <legend class="form-area__name">Ваши безбашенные достижения в путешествии</legend>
+          <ul class="achive-list">
+            <li class="achive-item">
+              <input class="achive-item__checkbox visually-hidden" type="checkbox" name="selfie-with-shark" id="selfie-with-shark" checked>
+              <label class="form-area__caption form-area__checkbox" for="selfie-with-shark">Сделал селфи с акулой</label>
+            </li>
+            <li class="achive-item">
+              <input class="achive-item__checkbox visually-hidden" type="checkbox" name="sunburned-beach" id="sunburned-beach" checked>
+              <label class="form-area__caption  form-area__checkbox" for="sunburned-beach">Обгорел на пляже</label>
+            </li>
+            <li class="achive-item">
+              <input class="achive-item__checkbox visually-hidden" type="checkbox" name="chuck-norris" id="chuck-norris">
+              <label class="form-area__caption form-area__checkbox" for="chuck-norris">Видел Чака Норриса</label>
+            </li>
+            <li class="achive-item">
+              <input class="achive-item__checkbox visually-hidden" type="checkbox" name="bought-souvenirs" id="bought-souvenirs">
+              <label class="form-area__caption form-area__checkbox" for="bought-souvenirs">Накупил сувениров</label>
+            </li>
+            <li class="achive-item">
+              <input class="achive-item__checkbox visually-hidden" type="checkbox" name="hold-tower" id="hold-tower" checked>
+              <label class="form-area__caption form-area__checkbox" for="hold-tower">Удержал башню</label>
+            </li>
+            <li class="achive-item">
+              <input class="achive-item__checkbox visually-hidden" type="checkbox" name="destroyed-hotel" id="destroyed-hotel">
+              <label class="form-area__caption form-area__checkbox" for="destroyed-hotel">Разгромил отель</label>
+            </li>
+          </ul>
+        </fieldset>
+        <!-- </div>
+        <div class="contest-form__block contest-form__block--contacts"> -->
+        <fieldset class="contest-form__block contest-form-user-contacts form-area" form="contest-form">
+          <legend class="form-area__name form-area__name--legend">Контактная информация:</legend>
+          <p class="contest-form-user-contacts__block">
+            <label class="form-area__name" for="user-phone">Номер телефона</label>
+            <input class="form-area__box form-area__caption" type="tel" id="user-phone" name="user-phone" placeholder="Номер, пожалуйста">
+          </p>
+          <p class="contest-form-user-contacts__block">
+            <label class="form-area__name" for="user-email">Адрес почты</label>
+            <input class="form-area__box form-area__caption" type="email" id="user-email" name="user-email" placeholder="Введите почту *" required>
+          </p>
+        </fieldset>
+        <!-- </div>
+        <div class="contest-form__block contest-form__block--app"> -->
+        <fieldset class="contest-form__block contest-form-app form-area" form="contest-form">
+          <legend class="form-area__name">С каким приложением путешествовали?</legend>
+          <ul class="app-list">
+            <li class="app-item">
+              <input class="app-item__radio visually-hidden" type="radio" name="app-ios" id="app-ios" checked>
+              <label class="form-area__caption form-area__radio" for="app-ios">Pink для iOS</label>
+            </li>
+            <li class="app-item">
+              <input class="app-item__radio visually-hidden" type="radio" name="app-android" id="app-android">
+              <label class="form-area__caption form-area__radio" for="app-android">Pink для Android</label>
+            </li>
+            <li class="app-item">
+              <input class="app-item__radio visually-hidden" type="radio" name="app-windows" id="app-windows">
+              <label class="form-area__caption form-area__radio" for="app-windows">Windows Phone</label>
+            </li>
+          </ul>
+        </fieldset>
+        <!-- </div> -->
+        <!-- <div class="contest-form__block contest-form__block--text"> -->
+        <fieldset class="contest-form__block contest-form-user-text form-area" form="contest-form">
+          <!-- <legend class="visually-hidden" for="user-text">Поле для текста</legend> -->
+          <!-- <p class="contest-form-user-text__block"> -->
+            <legend class="form-area__name">Опишите свои эмоции</legend>
+            <textarea class="form-area__box form-area__caption form-area__text" id="user-text" name="user-text" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          <!-- </p> -->
+        </fieldset>
+        <!-- </div> -->
+        <div class="contest-form-submit">
+          <button class="contest-form__button button" type="submit">Отправить форму</button>
+        </div>
+        <div class="contest-form-comment">
+          <p class="note-form">
+            <span class="asterisk">*</span> — обязательные <span class="note-form--desktop">для заполнения</span> поля
+          </p>
+        </div>
+      </form>
+    </div>
+    <div class="popup-status popup-status-success popup-status--none">
+      <div class="popup-status__wrapper popup-status__wrapper--success">
+        <!-- <div class="wrapper"> -->
+          <h3 class="popup-status__title">Ваша заявка отправлена</h3>
+          <p class="popup-status__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее
+            время мы рассмотрим ее и оповестим вас.
+          </p>
+        <!-- </div> -->
+      </div>
+      <button class="popup-status__button popup-status__button--success contest-form__button button">Закрыть окно</button>
+    </div>
+    <div class="popup-status popup-status-error popup-status--none">
+      <div class="popup-status__wrapper popup-status__wrapper--error">
+        <!-- <div class="wrapper"> -->
+          <h3 class="popup-status__title">Что-то пошло не так!</h3>
+          <p class="popup-status__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
+          </p>
+        <!-- </div> -->
+      </div>
+      <button class="popup-status__button popup-status__button--error contest-form__button button">ОК</button>
+    </div>
+  </main>
+  <footer class="page-footer">
+    <div class="wrapper footer-wrapper">
+      <div class="page-footer__container">
+        <a class="page-footer__logo" href="#">
+          <span class="visually-hidden">Главная</span>
+          <img class="page-footer__logo-img footer-logo-glasses" src="img/glasses-footer.svg" alt="Pink">
+          <img class="page-footer__logo-img footer-logo-pink" src="img/pink-footer.svg" alt="Pink">
+        </a>
+      </div>
+      <div class="page-footer__container footer-social">
+        <a class="footer-social__link footer-social__link-twitter" href="">
+          <img class="footer-social-img" src="img/twitter.svg" alt=""><span class="visually-hidden">Twitter</span>
+        </a>
+        <a class="footer-social__link footer-social__link-facebook" href="">
+          <img class="footer-social-img" src="img/facebook.svg" alt=""><span class="visually-hidden">FaceBook</span>
+        </a>
+        <a class="footer-social__link footer-social__link-youtube" href="">
+          <img class="footer-social-img" src="img/youtube.svg" alt=""><span class="visually-hidden">YouTube</span>
+        </a>
+      </div>
+      <div class="page-footer__container">
+        <a class="page-footer__creator creator-link" href="#">
+          <span class="creator-link__text">Разработано</span>
+          <img class="creator-link__img" src="img/html-academy.svg" alt="HTML Academy"><span class="visually-hidden">HTML Academy</span>
+        </a>
+      </div>
+    </div>
+  </footer>
+  <script src="../js/header-menu.js"></script>
+</body>
+</html>

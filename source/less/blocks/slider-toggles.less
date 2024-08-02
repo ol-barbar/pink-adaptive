@@ -1,0 +1,44 @@
+.slider-toggles {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.slider-toggles__toggle {
+    background-color: fade(@blue; 30%);
+    margin: 0;
+    padding: 0;
+    height: 6px;
+    width: 6px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    &--current {
+        background-color: @white;
+        border: 3px solid @blue;
+        box-sizing: content-box;
+    }
+    &:hover,
+    &:focus {
+        background-color: fade(@blue; 60%);
+    }
+    &:active {
+        background-color: fade(@blue; 10%);
+    }
+}
+
+.reviews-toggles {
+    @media (min-width:@desktop-size) {
+        display: none;
+    }
+}
+
+.price-toggles {
+    @media (min-width:@tablet-size) {
+        display: none;
+    }
+}

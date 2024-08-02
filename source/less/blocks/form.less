@@ -1,0 +1,312 @@
+.contest-form {
+    background-color: @white;
+    overflow: hidden;
+    display: grid;
+    grid-template-areas: "name"
+                         "achive"
+                         "contacts"
+                         "app"
+                         "text"
+                         "button" 
+                         "comment";
+    @media (min-width: @tablet-size) {
+        gap: 70px;
+        grid-template-areas: "name name"
+                             "app app"
+                             "achive achive"
+                             "contacts contacts"
+                             "text text"
+                             "button comment";
+        
+    }
+    @media (min-width: @desktop-size) {
+        grid-template-areas: "name app"
+                             "contacts contacts"
+                             "achive achive"
+                             "text text"
+                             "button comment";
+    }
+}
+
+// .contest-form__block {
+    // @media (max-width: @mobil-size) {
+        // box-sizing: border-box;
+        // display: block;
+        // position: relative;
+        // left: -20px;
+        // padding-left: 20px;
+        // padding-right: 20px;
+        // width: 100vw;
+        // overflow: hidden;
+        // &:nth-child(even) {
+        //     background-color: @light-grey;
+        // }
+    // }
+// }
+
+.form-area {
+    @media (max-width: @mobil-size) {
+        display: block;
+        position: relative;
+    }
+}
+
+.contest-form-user-name {
+    grid-area: name;
+    border: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 25px;
+    @media (min-width: @tablet-size) {
+        gap: 55px;
+    }
+}
+
+.contest-form-user-name__block {
+    margin: 0;
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+    @media (min-width: @tablet-size) {
+        flex-wrap: nowrap;
+        margin: 0;
+        gap: 20px;
+    }
+    .form-area__box {
+        width: 100%;
+        padding: 15px 20px;
+        box-sizing: border-box;
+    }
+}
+
+.contest-form-app {
+    grid-area: app;
+    border: none;
+    margin: 40px 0;
+    padding: 0;
+    @media (min-width: @tablet-size) {
+        border: 2px solid @grey;
+        border-radius: 3px;
+        margin: 0;
+    }
+    @media (min-width: @desktop-size) {
+        margin: 0;
+        padding: 0 60px;
+    }
+}
+
+.app-list {
+    margin-top: 50px;
+    display: grid;
+    gap: 45px;
+    @media (min-width: @tablet-size) {
+        margin: 60px 0;
+    }
+    @media (min-width: @desktop-size) {
+        margin: 65px 0;
+    }
+}
+
+.app-item {
+    padding-left: 70px;
+    @media (min-width: @tablet-size) {
+        padding-left: 120px;
+    }
+    @media (min-width: @desktop-size) {
+        padding-left: 60px;
+    }
+}
+
+.contest-form-user-contacts {
+    border: none;
+    padding: 30px 0;
+    grid-area: contacts;
+    display: flex;
+    flex-wrap: wrap;
+    @media (min-width: @tablet-size) {
+        border: 2px solid @grey;
+        border-radius: 3px;
+    }
+    @media (min-width: @desktop-size) {
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    .form-area__name--legend {
+        @media (max-width: @mobil-size) {
+            display: none;
+        }
+    }
+}
+
+.contest-form-user-contacts__block {
+    margin: 15px 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    @media (min-width: @tablet-size) {
+        margin: 20px 60px;
+        width: 100%;
+    }
+    @media (min-width: @desktop-size) {
+        margin: 0 30px;
+    }
+    .form-area__name {
+        padding-right: 20px;
+        @media (min-width: @tablet-size) {
+            order: 2;
+            padding-right: 0;
+            padding-left: 20px;
+        }
+    }
+    .form-area__box {
+        width: 100%;
+        margin: 15px 0;
+        padding: 15px 20px;
+        box-sizing: border-box;
+        flex-grow: 1;
+    }
+}
+
+.contest-form-achive {
+    grid-area: achive;
+    border: none;
+    margin: 40px 0;
+    @media (min-width: @tablet-size) {
+        border: 2px solid @grey;
+        border-radius: 3px;
+        margin: 0;
+    }
+}
+
+.achive-list {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 45px;
+    @media (min-width: @tablet-size) {
+        margin: 60px 0;
+    }
+    @media (min-width: @desktop-size) {
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 65px 0;
+    }
+}
+
+.achive-item {
+    padding-left: 55px;
+}
+
+.contest-form-user-text {
+    grid-area: text;
+    border: none;
+    padding: 20px 0;
+    margin: 40px 0;
+    @media (min-width: @tablet-size) {
+        padding: 50px 60px;
+        border: 2px solid @grey;
+        border-radius: 3px;
+        margin: 0;
+    }
+    .form-area__name {
+        @media (min-width: @tablet-size) {
+        }
+    }
+    .form-area__box {
+        width: 100%;
+        padding: 15px 20px;
+        box-sizing: border-box;
+        min-height: 200px;
+        @media (min-width: @tablet-size) {
+            min-height: 190px;
+        }
+        @media (min-width: @desktop-size) {
+            min-height: 125px;
+        }
+    }
+}
+
+.contest-form-user-text__block {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+    @media (min-width: @tablet-size) {
+        border: 2px solid @grey;
+        border-radius: 3px;
+    }
+    .form-area__name {
+        width: 100%;
+    }
+    .form-area__box {
+        width: 100%;
+        padding: 15px 20px;
+        box-sizing: border-box;
+    }
+}
+
+.contest-form-submit {
+    grid-area: button;
+    padding: 0;
+    margin-bottom: 25px;
+    @media (min-width: @tablet-size) {
+        margin: 0;
+    }
+}
+
+.contest-form-comment {
+    grid-area: comment;
+    text-transform: uppercase;
+    text-align: center;
+    @media (min-width: @tablet-size) {
+        text-align: right;
+    }
+}
+
+.note-form {
+    &--desktop {
+        @media (max-width: @mobil-size) {
+            display: none;
+        }
+    }
+}
+
+.form-area__name {
+    .font-style(14px; 18px; normal);
+    color: @strong-pink;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.form-area__caption {
+    .font-style(18px; 30px; normal);
+    color: @blue;
+    &::placeholder {
+        color: @blue;
+    }
+}
+
+.form-area__box {
+    border: 2px solid @grey;
+    border-radius: 3px;
+}
+
+.form-area__text {
+    .font-style(18px; 30px; normal);
+    max-height: 197px;
+    min-height: 124px;
+    &::placeholder {
+        .font-style(18px; 30px; normal);
+        font-family: Open Sans;
+    }
+}
+
+.asterisk {
+    color: @strong-pink;
+}

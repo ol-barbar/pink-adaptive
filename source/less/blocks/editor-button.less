@@ -1,0 +1,27 @@
+.photo-editor__buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    @media (min-width:@tablet-size) {
+        gap: 25px;
+    }
+    @media (min-width:@desktop-size) {
+        flex-direction: row;
+        gap: 45px;
+    }
+}
+
+.photo-editor__button {
+    .font-style(18px; 18px; bold);
+    color: @strong-pink;
+    background-color: transparent;
+    border: 3px solid @strong-pink;
+    border-radius: 30px;
+    min-width: 177px;
+    padding: 15px 40px;
+    width: 100%;
+    &--disable {
+        color: fade(@blue, 10%);
+        border: 3px solid fade(@blue, 10%);
+    }
+}
