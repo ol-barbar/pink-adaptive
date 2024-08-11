@@ -3,7 +3,10 @@
 }
 
 .promo-info {
-    background-image: url(../img/promo-mobil-img.png);
+    background-image: url(../img/promo-img-basic.png);
+    @media (min-resolution: 2dppx) {
+        background-image: url(../img/promo-img-basic@2x.png);
+    }
     background-repeat: no-repeat;
     background-position: bottom -38px center;
     background-size: contain;
@@ -20,7 +23,6 @@
         flex-basis: 310px;
         padding-top: 75px;
         padding-bottom: 15px;
-        background-image: url(../img/promo-tablet-img.png);
         background-position: bottom -68px left;
         background-size: calc(370px - 15%);
         &--padding {
@@ -88,19 +90,28 @@
 
 .promo-info__block--first {
     @media (min-width:@desktop-size) {
-        background-image: url(../img/promo-desk-img-1.png);
+        background-image: url(../img/promo-img-1.png);
+        @media (min-resolution: 2dppx) {
+            background-image: url(../img/promo-img-1@2x.png);
+        }
     }
 }
 
 .promo-info__block--second {
     @media (min-width:@desktop-size) {
-        background-image: url(../img/promo-desk-img-2.png);
+        background-image: url(../img/promo-img-2.png);
+        @media (min-resolution: 2dppx) {
+            background-image: url(../img/promo-img-2@2x.png);
+        }
     }
 }
 
 .promo-info__block--third {
     @media (min-width:@desktop-size) {
-        background-image: url(../img/promo-desk-img-3.png);
+        background-image: url(../img/promo-img-3.png);
+        @media (min-resolution: 2dppx) {
+            background-image: url(../img/promo-img-3@2x.png);
+        }
     }
 }
 

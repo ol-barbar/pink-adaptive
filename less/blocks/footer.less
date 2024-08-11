@@ -22,6 +22,7 @@
     position: relative;
     width: 48px;
     height: 48px;
+    color: @strong-pink;
     border: 3px solid fade(@blue; 10%);
     border-radius: 100%;
     &:hover,
@@ -35,32 +36,36 @@
 }
 
 .page-footer__logo {
+    color: @blue;
     &:hover, 
     &:focus {
         .page-footer__logo-img {
-            fill: @strong-pink;
+            color: @strong-pink;
         }
     }
     &:active {
         .page-footer__logo-img {
+            color: @blue;
             opacity: 0.3;
         }
     }
-    // .page-footer__logo-img:hover,
-    // .page-footer__logo-img:focus {
-    //     fill: @strong-pink;
-    // }
-    // .page-footer__logo-img:active {
-    //     opacity: 0.3;
-    // }
 }
 
-.footer-logo-glasses {
-    margin-right: 10px;
+.page-footer__logo-img--basic {
+    display: block;
+    @media (min-width: @desktop-size) {
+        display: none;
+    }
+}
+
+.page-footer__logo-img--desktop {
+    display: none;
+    @media (min-width: @desktop-size) {
+        display: block;
+    }
 }
 
 .footer-social-img {
-    content: "";
     position: absolute;
     left: 0;
     right: 0;
@@ -74,9 +79,10 @@
     display: flex;
     align-items: center;
     gap: 15px;
+    color: @strong-pink;
     &:hover .creator-link__img,
     &:focus .creator-link__img {
-        fill: @blue;
+        color: @blue;
     }
     &:active .creator-link__img {
         opacity: 0.3;
